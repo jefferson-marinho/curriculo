@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -32,6 +33,7 @@
             padding: 0px;
         }
         header{
+		display: flex;
             background-color:var(--cor4) ;
             color: white;
             text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.500);
@@ -43,6 +45,11 @@
             top: 0px;
             z-index: 2;
         }
+		header > h1{
+			display: inline;
+			position: float;
+			right: 0px;
+		}
         main{
             display: flex;
             padding: 0px 35px;
@@ -104,24 +111,6 @@
             height: 100%;
             border-radius: 50%;
         }
-        #nome{
-            font-family: cabeca, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            border: 0px;
-        }
-        #nome h1{
-            margin: 0px;
-            border: 0px;
-            padding: 0px 30px;
-            text-align: center;
-        }
-        #nome h2{
-            margin: 0px;
-            border: 0px;
-            padding: 0px 30px;   
-            color: var(--cor3);
-            text-align: center;
-            text-shadow: none;
-        }
     </style>
 </head>
 <body>
@@ -131,19 +120,18 @@
     -->
     
     <HEADER>
-        <div id="foto">
+        <div class="topo-left" id="foto">
             <picture>
                 <img src="imagens/jefh-color-gde.png" alt="Foto do perfil">
             </picture>
         </div>
 
-        <div id="nome">
-            <h1>JEFFERSON MARINHO SOUZA DAMASCENO</h1>
-            <h2>MECANICO DE AERONAVES</h2>
-        </div>
+        <h1>JEFFERSON MARINHO SOUZA DAMASCENO</h1>
+
+        MECANICO DE AERONAVES
     </HEADER>
     <MAIN>
-        <article>
+        <article class="mid-right">
             <h1>EXPERIÊNCIA PROFISSIONAL</h1>
             <h2>
                 Azul Linhas Aéreas - Mecânico de aeronaves
@@ -219,7 +207,7 @@
             <h2>568F Propeller Abbreviated Blade Repair - Level IV </h2>
             <p>UTC Aerospace Systems, CT – USA – 2013</p>
         </article>
-        <Aside>
+        <Aside class="mid-left">
             
             <h1>PERFIL</h1>
 
