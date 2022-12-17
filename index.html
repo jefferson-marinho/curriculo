@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculo - JEFFERSON MARINHO SOUZA DAMASCENO</title>
     <style>
+        @font-face {
+            font-family: cabeca;
+            src: url('fonts/Cavilant.otf');
+        } 
+        @font-face {
+            font-family: escrita;
+            src: url('fonts/CaviarDreams.ttf');
+        }
         :root{
 
             font-size: 1em;
@@ -17,19 +25,57 @@
             --cor5: #80848C;
             
         }
-
-
         body{
             background-color: white;
             margin: 0px;
+            border: 0px;
+            padding: 0px;
         }
         header{
             background-color:var(--cor4) ;
             color: white;
             text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.500);
+            display: flex;
+            align-items: center;
+            padding: 10px 5%;
+            justify-content: center;
+            position: sticky;
+            top: 0px;
+            z-index: 2;
         }
         main{
+            display: flex;
             padding: 0px 35px;
+            align-items: flex-start;
+            flex-direction: row-reverse;
+            justify-content: center;
+            background-color: var(--cor4);
+        }
+        article{
+            background-color: #fff;
+            position: relative;
+            max-width: fit-content;
+            padding: 15px;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.500);
+            border-radius: 10px;
+            z-index: 1;
+        }
+        aside{
+            font-family: escrita;
+            position: sticky;
+            top: 230px;
+            max-width: 300px;
+            padding: 0px 15px;
+            color: #fff;
+        }
+        aside h1{
+            font-family: cabeca; ;
+        }
+        aside strong{
+            background-image: linear-gradient(to top,var(--cor0),transparent);
+            font-weight: bold;
+            padding: 0px 6px;
+            border-radius: 10px;
         }
         article h1{
             margin: 0px;
@@ -58,6 +104,24 @@
             height: 100%;
             border-radius: 50%;
         }
+        #nome{
+            font-family: cabeca, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            border: 0px;
+        }
+        #nome h1{
+            margin: 0px;
+            border: 0px;
+            padding: 0px 30px;
+            text-align: center;
+        }
+        #nome h2{
+            margin: 0px;
+            border: 0px;
+            padding: 0px 30px;   
+            color: var(--cor3);
+            text-align: center;
+            text-shadow: none;
+        }
     </style>
 </head>
 <body>
@@ -69,14 +133,14 @@
     <HEADER>
         <div id="foto">
             <picture>
-                <img src="imagens/foto-peq.png" alt="Foto do perfil">
+                <img src="imagens/jefh-color-gde.png" alt="Foto do perfil">
             </picture>
-        
         </div>
 
-        <h1>JEFFERSON MARINHO SOUZA DAMASCENO</h1>
-
-        MECANICO DE AERONAVES
+        <div id="nome">
+            <h1>JEFFERSON MARINHO SOUZA DAMASCENO</h1>
+            <h2>MECANICO DE AERONAVES</h2>
+        </div>
     </HEADER>
     <MAIN>
         <article>
